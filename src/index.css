@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Cairo", serif;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --main: #562916;
+    --main-blur: #5629168a;
+    --second: #ede6c9;
+    --second2: #cac4ac;
+    --danger: #eb0000;
+    --success: #297714;
+    --price: #fff;
+    
+    --mainv21: #ede6c9;
+    --mainv2: #562916;
+    background-color: #ede6c9;
+    --header: #fff;
+    --header2: #562916;
+    
+    --blue: #000;
+
+    --rules: #000;
+
+    --warning: #7c7c1c;
+    
+    --dashboardPael: #cac4ac;
+
+    --cartBox: #d3d2d2;
+}
+
+.dark-mode {
+    --main: #222;
+    --main-blur: #444;
+
+    --second: #ede6c9;
+    --second2: #222;
+    
+    --danger: #ff7675;
+    --success: #55efc4;
+    --price: #55efc4;
+
+    --mainv21: #222;
+    --mainv2: #ede6c9;
+    
+    color: #ede6c9;
+    background-color: #121212;
+    
+    --header: #222;
+    --header2: #ede6c9;
+
+    --blue: #0c4488;
+    --rules: #ede6c9;
+
+    --warning: #ffffa8;
+
+    --cartBox: #222;
+
+    --dashboardPael: var(--header)
+}
+
+input:focus {
+    outline: none;
+}
+
+p,div,h1,h2,h3,h4,h5,h6{
+    cursor: default;
+}
+
+.error {
+    color: var(--danger);
+    font-weight: 600;
+}
+
+.success {
+    color: var(--success);
+    font-weight: 600;
+}
+
+select:focus {
+    outline: none;
+}

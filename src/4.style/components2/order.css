@@ -1,0 +1,94 @@
+.orders {
+    position: relative;
+} 
+
+.orders .action button {
+    margin: 5px;
+    padding: 5px;
+    background-color: var(--header);
+    color: var(--header2);
+    border-radius: 5px;
+    transition-duration: 0.2s;
+}
+
+.orders .action button:hover {
+    background-color: var(--header2);
+    color: var(--header);
+}
+
+.orders .display {
+    background-color: var(--header);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    overflow: auto;
+    animation-name: displayBlur;
+    animation-duration: 0.1s;
+    animation-timing-function: linear;
+}
+
+@keyframes displayBlur {
+    0% {
+        background-color: transparent;
+        backdrop-filter: blur(0px);
+    }
+    100% {
+        background-color: #222222ed;
+        backdrop-filter: blur(20px);
+    }
+}
+
+.orders .display .img-title {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.display .bg-order {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.orders .display ul li {
+    margin: 20px;
+}
+
+.orders .Receipt_status {
+    font-weight: bold;
+}
+.orders .payment_status {
+    font-weight: bold;
+}
+
+.orders .display .close {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.orders .display .strong {
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.orders .display .strong::before {
+    content: '(';
+}
+
+.orders .display .strong::after {
+    content: ')';
+}
+
+.table-orders tbody td {
+    border: none;
+    border-bottom: 1px solid var(--header2) !important;
+    width: 150px;
+}
+
+.table-orders tbody td img {
+    width: 30px;
+}

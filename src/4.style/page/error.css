@@ -1,0 +1,28 @@
+.error-page {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.error-page img {
+    width: 30%;
+}
+
+.error-page h2 {
+    font-size: 50px;
+    color: var(--header2);
+    font-weight: 600;
+}
+
+.error-page p {
+    font-weight: bold;
+}
+
+.error-page a {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: var(--header);
+    color: var(--header2);
+    border-radius: 5px;
+    border: 1px solid var(--header2);
+}

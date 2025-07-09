@@ -1,0 +1,11 @@
+[
+    {
+      "type": "معدني",
+      "price_per_meter": 80
+    },
+    {
+      "type": "بلاستيك",
+      "price_per_meter": 75
+    }
+  ]
+  

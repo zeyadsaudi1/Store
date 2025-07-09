@@ -1,0 +1,37 @@
+/* loading.css */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--); /* يمكنك تعديل اللون هنا */
+    position: relative;
+    animation: scaleIn 0.6s ease-in-out forwards;
+  }
+  
+  @keyframes scaleIn {
+    0% {
+      transform: scale(0); /* يبدأ العنصر بحجم 0 */
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1); /* يتم تكبيره إلى الحجم الأصلي */
+      opacity: 1;
+    }
+  }
+  
+  .loading img {
+    width: 15%;
+    animation: imageFadeIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes imageFadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

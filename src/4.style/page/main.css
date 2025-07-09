@@ -1,0 +1,245 @@
+.main {
+    max-width: 1555px;
+    margin: auto;
+}
+
+.special-customers {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--main);
+}
+
+.bg {
+    height: 600px;
+    display: "flex";
+    align-items: "center";
+    justify-content: "center";
+}
+
+.special-customers h3 {
+    color: var(--header2);
+}
+
+.special-customers .cus-parent {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.special-customers .cus-parent .swiper {
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.special-customers .cus-parent .swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    height: 100%;         
+}
+
+.special-customers .cus-parent .cus {
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    cursor: grab;
+}
+
+.products {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    flex-flow: row wrap;
+}
+
+.swiper {
+    width: 100%;
+    justify-content: center;
+}
+
+.change-page {
+    text-align: center;
+}
+
+.change-page button {
+    background-color: var(--second2);
+    width: 30px;
+    height: 30px;
+    color: var(--main);
+    margin: 10px;
+}
+
+.opinions {
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.opinions .opin-parent {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.opinions h3 {
+    margin: 50px 0 0 0;
+}
+
+.bg-ad {
+    position: relative;
+    height: 600px;
+    width: 97%;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-size: cover;
+    cursor: pointer !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 10;
+}
+
+.bg-ad .content {
+    position: relative;
+    font-size: 40px;
+    width: 80%;
+    font-weight: bold;
+    color: var(--blue);
+    transform: scale(1.2);
+    animation-name: textScale;
+    animation-duration: 2s;
+    color: #fff;
+    padding: 10px;
+}
+
+@keyframes textScale {
+    0% {
+        transform: scale(1);
+        color: var(--header);
+    }
+    100% {
+        transform: scale(1.2);
+        color: #fff;
+    }
+}
+
+.bg-ad .content::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: var(--header2);
+    bottom: 0;
+    left: 0;
+    animation-name: displayText;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+
+}
+
+@keyframes displayText {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+.swiper-slide {
+    z-index: -1 !important;
+}
+
+.bg-ad .titlebg {
+    /* position: absolute;
+    right: 20px;
+    bottom: 20px;*/
+    font-size: 50px; 
+    font-weight: bold;
+}
+
+@media screen and (max-width: 680px) {
+    .bg-ad .content {
+        font-size: 32px;
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 580px) {
+    .bg-ad .content {
+        font-size: 22px;
+    }
+    .bg-ad {
+        background-size: contain;
+        height: 400px;
+    }
+    .bg-ad .content {
+        font-size: 15px;
+        position: relative;
+        bottom: 50px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .bg-ad .content {
+        font-size: 22px;
+    }
+    .bg-ad {
+        background-size: contain;
+        height: 300px;
+    }
+    .bg-ad .content {
+        font-size: 15px;
+        position: relative;
+        bottom: 20px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .bg-ad .content {
+        font-size: 22px;
+    }
+    .bg-ad {
+        background-size: contain;
+        height: 250px;
+    }
+    .bg-ad .content {
+        font-size: 12px;
+        position: relative;
+        bottom: 20px;
+    }
+}
+
+.loadingAds {
+    height: 500px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.loadingAds p {
+    font-size: 20px;
+    font-weight: bold;
+    animation-name: add;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes add {
+    0% {
+        color: var(--blue);
+    }
+    50% {
+        color: var(--second2);
+    }
+    100% {
+        color: var(--blue);
+    }
+}

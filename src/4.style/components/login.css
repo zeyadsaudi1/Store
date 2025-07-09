@@ -1,0 +1,200 @@
+.loginBar {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    background-color: #222222ed;
+    backdrop-filter: blur(20px);
+    animation-name: displayBlur;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+}
+
+@keyframes displayBlur {
+    0% {
+        background-color: transparent;
+        backdrop-filter: blur(0px);
+    }
+    100% {
+        background-color: #222222ed;
+        backdrop-filter: blur(20px);
+    }
+}
+
+.loginBar::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.login {
+    width: 60%;
+    position: relative;
+    top: 0px;
+    margin: auto;
+    padding: 30px;
+    background-color: var(--header);
+    animation-name: dropDownLogin;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+}
+
+@keyframes dropDownLogin {
+    0% {
+    top: -500px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.login .logo {
+    text-align: center;
+}
+
+.login .logo h2 {
+    color: var(--header2);
+}
+
+.login .logo img {
+    width: 100px;
+}
+
+.login input {
+    display: block;
+    padding: 10px;
+    width: 90%;
+    background-color: transparent;
+    color: var(--header2);
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--header2);
+}
+
+.login .react-tel-input .form-control {
+    width: 90% !important;
+}
+
+.login input::placeholder {
+    font-family: 'cairo';
+}
+
+.login label::before {
+    content: '*';
+    color: var(--danger);
+}
+
+.login .loginBtn {
+    padding: 5px 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: var(--header);
+    font-weight: bold;
+    background-color: var(--header2);
+    border: 1px solid transparent;
+    transition-duration: 0.2s;
+}
+
+.login a {
+    padding: 5px 10px;
+    position: relative;
+    border: 1px solid var(--header);
+    color: var(--header2);
+    z-index: 3000;
+    border: 1px solid var(--header2);
+    transition-duration: 0.2s;
+}
+
+
+.login a:hover {
+    color: var(--header);
+}
+
+.login a::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--header2);
+    transition-duration: 0.2s;
+    z-index: -2;
+}
+
+.login a:hover::before {
+    width: 100%;
+} 
+
+.login .close {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.login .close:hover {
+    background-color: transparent;
+    border: none;
+}
+
+.login button:hover {
+    background-color: var(--header);
+    border: 1px solid var(--header2);
+    color: var(--header2);
+}
+
+@media screen and (max-width: 800px) {
+    .login {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 465px) {
+    .login {
+        width: 100%;
+    }
+    .loginBtn {
+        display: block;
+        width: 80%;
+        text-align: center;
+        border-radius: 20px;
+        margin: 10px 0;
+    }
+    .login a {
+        display: block;
+        width: 90%;
+        text-align: center;
+        border-radius: 20px;
+    }
+    .login a::before {
+        border-radius: 20px;
+        border: none;
+    }
+}
+
+.pass {
+    position: relative;
+}
+
+.pass .show {
+    position: absolute;
+    left: 50px;
+    top: 0;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    color: var(--header2);
+}
+
+.pass .show:hover {
+    background-color: transparent;
+    border: none;
+}
+
+.verifed-success {
+    text-align: center;
+}
+
+.verifed-success img {
+    width: 30%;
+    margin: auto;
+}

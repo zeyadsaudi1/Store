@@ -1,0 +1,38 @@
+[
+    {
+        "name": "أحمد علي",
+        "comment": "منتج رائع! سأقوم بالشراء مرة أخرى.",
+        "img": "https://res.cloudinary.com/dfnbgawpp/image/upload/v1735417609/2_gzjftj.jpg",
+        "rating": 5
+    },
+    {
+        "name": "جاسر محمد",
+        "comment": "الجودة ممتازة، لكن أتمنى أن يكون السعر أقل.",
+        "img": "https://res.cloudinary.com/dfnbgawpp/image/upload/v1735417610/1_dfg8ej.webp",
+        "rating": 4
+    },
+    {
+        "name": "محمد فؤاد",
+        "comment": "التجربة كانت جيدة، ولكن يحتاج المنتج لبعض التحسينات.",
+        "img": "https://res.cloudinary.com/dfnbgawpp/image/upload/v1735417612/3_ztw4i1.jpg",
+        "rating": 3
+    },
+    {
+        "name": "ريم مصطفى",
+        "comment": "منتج مميز جدًا، استخدامه سهل ومريح.",
+        "img": "https://res.cloudinary.com/dfnbgawpp/image/upload/v1735417610/4_rukxzu.webp",
+        "rating": 5
+    },
+    {
+        "name": "زياد فوزي",
+        "comment": "أداء المنتج يفوق التوقعات. أنصح به الجميع.",
+        "img": "https://res.cloudinary.com/dfnbgawpp/image/upload/v1735417613/5_pcmbvz.jpg",
+        "rating": 5
+    },
+    {
+        "name": "ماجد بن زين",
+        "comment": "جودة عالية، لكن كنت أتمنى أن يكون اللون متنوع أكثر.",
+        "img": "https://res.cloudinary.com/dfnbgawpp/image/upload/v1735417612/6_dzvl5a.jpg",
+        "rating": 4
+    }
+]

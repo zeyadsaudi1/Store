@@ -1,0 +1,124 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fafafa;
+    position: relative; /* اجعل الوضع الافتراضي relative */
+}
+
+header .btns button {
+    color: var(--header2);
+    margin: 0 10px;
+}
+
+header .cart {
+    display: flex;
+    align-items: center;
+}
+
+header .cart div {
+    text-align: center;
+}
+
+header .cart div img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+header .cart button {
+    color: var(--header2);
+    margin: 0 10px;
+}
+
+.header-static {
+    position: relative; /* بدلاً من static */;
+    animation-name: AnimationStatic;
+    animation-duration: 0.2s;
+    background-color: var(--header);
+    color: var(--header2);
+}
+
+@keyframes AnimationStatic {
+    0% {
+        top: -20px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+.header-fixed {
+    position: fixed !important;
+    width: 100%;
+    top: 0;
+    animation-name: AnimationFixed;
+    animation-duration: 0.2s;
+    z-index: 700;
+    background-color: var(--header);
+    color: var(--header2);
+}
+
+@keyframes AnimationFixed {
+    0% {
+        top: -40px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.user-area {
+    position: relative;
+    cursor: pointer;
+}
+
+.user-area .name-of-user {
+    position: absolute;
+    bottom: -20px;
+    left: 1px;
+    background-color: var(--header2);
+    color: var(--header);
+    border-radius: 5px 0;
+    padding: 2px 3px;
+    font-size: 12px;
+    transform: scale(1);
+    animation-name: showUserName;
+    animation-duration: 0.2s;
+}
+
+@keyframes showUserName {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+header .cartLink {
+    display: flex;
+    align-items: center;
+}
+
+header .cartLink .cartIcon {
+    display: flex;
+    position: relative;
+}
+
+header .cartLink .cartIcon .numsProduct { 
+    position: absolute;
+    left: 0;
+    top: -20px;
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+header .cartLink .total {
+    font-weight: bold;
+    margin: 0 5px;
+}

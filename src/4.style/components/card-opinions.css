@@ -1,0 +1,25 @@
+.card-opinions {
+    width: 100%;
+    background-color: var(--second2);
+    padding: 20px;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.card-opinions .img-person {
+    width: 70px;
+    margin: auto;
+    height: 70px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-opinions i {
+    color: gold;
+}
+
+.card-opinions .content p {
+    font-weight: bold;
+}

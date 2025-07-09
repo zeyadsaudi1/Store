@@ -1,0 +1,129 @@
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(100px);
+    z-index: -1;
+}
+.nav .nav-box {
+    background-color: var(--mainv21);
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+    animation-name: navBar;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+    padding: 10px;
+}
+
+@keyframes navBar {
+    0% {
+        right: -300px;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+.nav .nav-box .top {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.nav .nav-box .top .close {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--mainv2);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.nav .nav-box ul {
+    list-style: none;
+}
+
+.nav .nav-box ul li {
+    margin: 10px;
+}
+
+.nav .nav-box ul li a {
+    color: var(--mainv2);
+}
+
+.nav .nav-box button {
+    color: var(--mainv2);
+}
+
+.nav .social {
+    border-top: 1px solid var(--mainv2);
+}
+
+.nav .social a {
+    margin: 0 7px;
+    font-size: 20px;
+    color: var(--mainv2);
+}
+
+.nav .sublinks {
+    width: 100%;
+    padding: 10px;
+}
+
+.nav .sublinks li {
+    list-style: georgian;
+    color: var(--main);
+}
+
+.nav .name-of-user {
+    color: var(--header2);
+    position: relative;
+    padding: 10px;
+}
+
+.nav .name-of-user::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: var(--header2);
+    transition-duration: 0.2s;
+}
+
+.nav .name-of-user:hover::before {
+    width: 70%;
+}
+
+.nav .nav-box .logoutBtn {
+    padding: 5px 10px;
+    background-color: var(--header2);
+    width: 70%;
+    font-weight: bold;
+    color: var(--header);
+    border-radius: 20px;
+    border: 1px solid transparent;
+    transition-duration: 0.2s;
+}
+
+.nav .nav-box .logoutBtn:hover {
+    background-color: transparent;
+    border: 1px solid var(--header2);
+    color: var(--header2);
+}

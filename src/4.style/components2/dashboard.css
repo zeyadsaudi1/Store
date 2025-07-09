@@ -1,0 +1,107 @@
+.myImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 4px solid var(--header2);
+    background-color: var(--header2);
+}
+
+.me {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-bottom: 30px;
+}
+
+.me .info-me p {
+    font-weight: 500;
+}
+
+.dashboard h2 {
+    border-bottom: 1px solid var(--header2);
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.last-news {
+    display: flex;
+    justify-content: space-around;
+}
+
+.last-news div {
+    width: calc(100% /5);
+    background-color: var(--dashboardPael);
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+.last-news div h4 {
+    font-weight: 400;
+}
+
+.last-news div .value {
+    display: block;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.per-100-90 {
+    color: var(--success) !important;
+}
+
+.per-100-90 {
+    color: var(--success) !important;
+}
+
+.last-rate {
+    margin: 20px 0;
+}
+
+.last-rate .review {
+    padding: 20px;
+    background-color: var(--dashboardPael);
+    color: var(--header2);
+    border-radius: 10px;
+    border: 1px solid var(--blue);
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.dashboard .space {
+    margin: 0 5px;
+}
+
+table {
+    width: 100%;
+}
+
+.table {
+    height: 300px;
+    overflow: auto;
+    position: relative;
+}
+
+.table thead {
+    position: sticky;
+    top: 0;
+}
+
+table thead th {
+    background-color: var(--header);
+}
+
+table tbody td {
+    border: 1px solid var(--blue);
+    color: var(--header2);
+    text-align: center;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.dashboard .status {
+    color: var(--success);
+}

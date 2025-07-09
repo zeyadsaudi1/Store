@@ -1,0 +1,192 @@
+.sign {
+    margin: 50px 0;
+}
+
+.sign .signBox {
+    background-color: var(--main-blur);
+    padding: 30px;
+    width: 80%;
+    margin: auto;
+}
+
+.sign .signBox .name, .address-and-dob, .dob, .gender, .password, .add {
+    display: flex;
+    width: 100%;
+}
+
+.sign .signBox h2 {
+    color: var(--second);
+}
+
+.sign .signBox p {
+    color: var(--second);
+}
+
+.sign .signBox div label {
+    display: block;
+    color: var(--second);
+}
+
+.sign .signBox div label::before {
+    content: '*';
+    color: var(--danger);
+}
+
+.sign .signBox .name div, .address-and-dob div, .dob div, .password div {
+    width: 50%;
+}
+
+.add div {
+    width: 100%;
+}
+
+.sign .signBox .name div input, .address-and-dob div input, .dob div input, .password div input, .add input, select {
+    padding: 10px;
+    width: 98%;
+    background-color: var(--header);
+    border: 1px solid var(--header2);
+    color: var(--header2);
+    font-family: 'cairo';
+    font-weight: bold;
+}
+
+.sign .signBox .name div input:focus, 
+.address-and-dob:focus div input:focus,
+.password div input:focus, .add input:focus, .address-and-dob input:focus {
+    border: 1px dashed var(--blue) !important;
+}
+
+.email label {
+    display: flex;
+}
+
+.form-control {
+    width: 230px !important;
+}
+
+.form-control,.flag-dropdown, .flag-dropdown li, .open, .selected-flag {
+    background-color: var(--header) !important;
+    color: var(--header2);
+}
+
+.email-phone input {
+    padding: 10px;
+    width: 100%;
+    background-color: var(--header);
+    border: 1px solid var(--header2);
+    color: var(--header2);
+    font-family: 'cairo';
+    font-weight: bold;
+}
+
+.email-phone input:focus {
+    border: 1px dashed var(--blue) !important;
+}
+
+.checked {
+    display: flex;
+}
+
+.checked label {
+    margin: 0 10px;
+}
+
+.checked label::before {
+    content: '*';
+    color: var(--danger);
+}
+
+.sign button {
+    padding: 5px 15px;
+    background-color: var(--header);
+    font-weight: bold;
+    color: var(--header2);
+    transition-duration: 0.2s;
+}
+
+.signBox p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.sign button:hover {
+    background-color: var(--header2);
+    color: var(--header);
+}
+
+.error {
+    color: var(--danger) !important;
+    font-weight: 500 !important;
+}
+
+.rolesBtn {
+    color: var(--rules);
+    width: 70%;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.rolesBtn button {
+    all: unset;
+    color: var(--rules);
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.rolesBtn button:hover {
+    background-color: transparent;
+    color: var(--rules);
+}
+
+
+@media screen and (max-width: 400px) {
+    .form-control {
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .rolesBtn {
+        width: 100%;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .sign .signBox {
+        width: 100%;
+    }
+    .sign {
+        margin: 0;
+    }
+}
+
+.pass,.rpass {
+    position: relative;
+}
+
+.pass button {
+    position: absolute; 
+    left: 10px;
+    bottom: 5%;
+    background-color: transparent;
+}
+
+.rpass .rpassBtn {
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    background-color: transparent;
+}
+
+.rpass .rpassBtn:hover {
+    background-color: transparent;
+    color: var(--header2);
+}
+
+.pass button:hover {
+    background-color: transparent;
+    color: var(--header2);
+}
+

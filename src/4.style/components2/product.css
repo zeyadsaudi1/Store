@@ -1,0 +1,150 @@
+.product   .parent {
+    display: flex;
+    width: 100%;
+}
+
+.product   div div {
+    width: 100%;
+} 
+
+.product   div div input {
+    width: 100%;
+    padding: 10px;
+    font-family: 'cairo';
+    background-color: var(--header);
+    color: var(--header2);
+}
+
+.product .Recommendations label {
+    display: block;
+}
+
+.product .Recommendations textarea {
+    width: 100%;
+    background-color: var(--header);
+    padding: 10px;
+    color: var(--header2);
+    font-family: 'cairo';
+}
+
+.product .Recommendations textarea:focus {
+    outline: none;
+}
+
+.product   div div label {
+    display: block;
+}
+
+.product   label::before {
+    content: '*';
+    color: var(--danger);
+}
+
+.product button {
+    background-color: var(--header);
+    padding: 5px 15px;
+    transition-duration: 0.2s;
+}
+
+.product button:hover {
+    background-color: var(--header2);
+    color: var(--header);
+}
+
+.product .photo {
+    display: flex;
+    align-items: center;
+}
+
+.product .photo .get-img {
+    display: inline-block;
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--header);
+    border: 2px dashed var(--danger);
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.product .photo button {
+    text-align: center !important;
+    height: 190px;
+    min-width: 100px;
+    border-radius: 10px;
+}
+
+.product .photo .get-img:hover {
+    border: 2px dotted var(--success);
+}
+
+.product .photo .get-img::before{
+    content: '';
+}
+
+.product .sub-photos {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-photo {
+    height: 150px;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--header);
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.sub-photo:hover {
+    background-color: var(--header2);
+    color: var(--header);
+}
+
+.photoss {
+    display: flex;
+}
+.photoss div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background-color: var(--header);
+    margin: 5px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    border-radius: 20px;
+}
+.photoss div:hover {
+    background-color: var(--header2);
+    color: var(--header);
+}
+
+.product .thumbnail {
+    background-color: var(--header);
+    margin: 15px 0;
+    padding: 10px;
+    min-width: none;
+    min-width: 100px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    border: 1px dashed var(--danger);
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.product .thumbnail:hover {
+    border: 1px dotted var(--success);
+}
+
+.product .thumbnail label::before {
+    content: '';
+}

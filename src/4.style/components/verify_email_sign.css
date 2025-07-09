@@ -1,0 +1,55 @@
+.verifyMail h3 {
+    font-size: 50px;
+    color: var(--mainv21);
+}
+
+.verifyMail .otp {
+    width: fit-content;
+    direction: ltr;
+    margin: 10px 0;
+}
+
+.verifyMail input {
+    width: 50px !important;
+    height: 50px;
+    background-color: transparent;
+    color: var(--header2);
+    font-weight: bold !important;
+    border: 2px dotted var(--header2);
+    border-radius: 10px;
+    transition-duration: 0.2s;
+    color: var(--rules);
+}
+
+.verifyMail input:focus {
+    border: 2px dashed var(--header) !important;
+}
+
+.verifyMail .space {
+    margin: 0 10px;
+}
+
+.verifyMail .email {
+    font-weight: 300;
+}
+
+.verifyMail .email::before {
+    content: '(';
+}
+.verifyMail .email::after {
+    content: ')';
+}
+
+.verifyMail .checkNow {
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+.checkNow:hover {
+    background-color: var(--header) !important;
+    color: var(--header2) !important;
+}
+
+.verifyMail .done {
+    text-align: center;
+}

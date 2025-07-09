@@ -1,0 +1,55 @@
+.user-img {
+    width: 50px;
+    margin: auto;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 2px solid var(--header2);
+}
+
+.users .statusLog {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 3px solid var(--header2);
+}
+
+.logged {
+    background-color: green;
+}
+
+.nonLogged {
+    background-color: red;
+}
+
+.loggedText {
+    color: green;
+}
+
+.nonLoggedText {
+    color: red;
+}
+
+.lockBtn {
+    color: #ffff6f;
+}
+
+.control {
+    padding: 10px;
+}
+
+.control input {
+    padding: 10px;
+    width: 300px;
+    margin-left: 20px;
+    background-color: var(--header);
+    border: 1px solid var(--header2);
+    color: var(--header2);
+    font-family: 'cairo';
+}
+
+.control input::placeholder {
+    color: var(--header2);
+}

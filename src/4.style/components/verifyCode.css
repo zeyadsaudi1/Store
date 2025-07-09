@@ -1,0 +1,98 @@
+.verify h4 {
+    text-align: center;
+    color: var(--header2);
+    margin: 20px 0;
+}
+
+.verify h4 i {
+    color: var(--header2);
+    position: relative;
+    animation-name: EmailVerifyAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.errorSerververify {
+    text-align: center;
+}
+
+@keyframes EmailVerifyAnimation {
+    0% {
+        transform: translateY(-3px) rotate(-10deg) scale(1.2);
+    }
+    50% {
+        transform: translateY(0) rotate(0deg) scale(1);
+    }
+    100% {
+        transform: translateY(-3px) rotate(-10deg) scale(1.2);
+    }
+}
+
+.verify {
+    text-align: right;
+}
+
+.verify div {
+    width: 60%;
+    margin: auto;
+    direction: ltr;
+}
+
+.verify .space {
+    width: 200px;
+}
+
+.verify input {
+    display: inline-block;
+    width: 100% !important;
+    height: 40px;
+    border: 1px solid var(--header2);
+}
+
+.verify button {
+    background-color: var(--header2);
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    color: var(--header);
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.verify button:hover {
+    color: var(--header2);
+}
+
+.verify .mail {
+    text-align: center;
+    direction: ltr;
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--header2);
+} 
+
+.verifed-success {
+    text-align: center;
+}
+
+.verifed-success img {
+    width: 30%;
+    margin: auto;
+}
+
+@media screen and (max-width: 800px) {
+    .verify div {
+        width: 100%;
+    }
+
+    .verify button {
+        width: 80%;
+        margin-right: 10%;
+        margin-left: 5%;
+    }
+}
